@@ -23,7 +23,7 @@ studies = st.text_input('studies')
 other_input = st.text_input('otherInput')
 urls = st.text_input('url')
 # Submit button
-if st.button('Submit'):
+if st.button('Submit!'):
     # Prepare data
     data = {
             'productName': product_name,
@@ -41,8 +41,8 @@ if st.button('Submit'):
 
     # Display response data
     if 'paragraphs' in response_data:
-        for paragraph in response_data['paragraphs']:
-            st.write(paragraph)
+        st.write(response_data['paragraphs'])
+        
 
     if 'links' in response_data:
         for link in response_data['links']:
