@@ -12,8 +12,6 @@ def send_data_to_api(data):
 st.title('Product Information Form')
 
 # Form fields
-product_name = st.text_input('Product Name')
-manufacturer = st.text_input('Manufacturer')
 product_name = st.text_input('productName')
 manufacturer = st.text_input('manufacturer')
 key_claims_product = st.text_input('keyClaimsProduct')
